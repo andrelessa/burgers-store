@@ -16,7 +16,7 @@ const baseStyles = css`
     color 0.3s;
 `;
 
-export const GhostButton = styled.button`
+export const GhostButton = styled.button<StyledButtonProps>`
   ${baseStyles}
   display: flex;
   justify-content: center;
