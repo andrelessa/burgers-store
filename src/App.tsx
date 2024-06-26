@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { OrderProvider } from './context/OrderContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { FooterActions } from './components/molecules/FooterActions';
@@ -11,6 +12,7 @@ export const App: FC = () => {
   return (
     <>
       <ThemeProvider isLoading={false} error={null}>
+        <Analytics />
         <OrderProvider>
           <GlobalStyles />
           <HeaderActions />
